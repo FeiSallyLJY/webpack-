@@ -8,7 +8,7 @@
   把js,css img 等（模块）打包；减少请求；
 3.安装webpack
   还是通过npm下载
-第一步该用什么命令
+第一步
   npm init => package.json
 第二步 安装webpack
   =======>全局安装（不推荐=>原因 =>框架更新太快）
@@ -39,9 +39,8 @@
 5.webpack 的强大功能 调试更简单
   source maps(可以使用打断点功能)
   打包之后的文件 如果配置了 source maps 可以看到依赖的代码
-  ===========>到底在哪里配置呢？？？？？？
-  webpack.config.js
-  一共四种devtool:'eval-source-map'
+  ===========>在配置哪里webpack.config.js
+  一共四种 devtool:'eval-source-map'
     第三种!// eval-source-map 偏中小型的一种
 使用eval 打包源文件模块，在同一个文件中
 生成一个干净完整source map。这个文件可以在不影响构建速度的前提下生成完整的sourcemap
@@ -128,6 +127,7 @@ css-loader的版本号改成0.28.11
                         options:{
                             // 把css 当成模块 => json对象来看待
                             modules:true,//指定启用css modules
+                            //文件名   样式名   转换
                             localldentName:'[name]_[local]--[hash:base64:5]'//指定css的类名格式
                         }
                     }
