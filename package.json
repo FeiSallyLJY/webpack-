@@ -1,0 +1,27 @@
+{
+  "name": "webpack_ljy",
+  "version": "1.1.0",
+  "description": "这是一个重置的webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "server": "webpack-dev-server --open"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "ljy",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^2.0.0",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.9.5"
+  }
+}
