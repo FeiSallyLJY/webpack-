@@ -23,10 +23,8 @@
    node_modules\.bin\webpack app\main.js public\build_main.js
    但是!!
    
-    用终端操作终归不好管理
-    那么，webpack提供了一个配置文件 名字叫做webpack.config.js(规定)
-    
-    在package.json里面的script这个对象=>是一个自定义指令的位置==>我们可以简化命令实现打包
+    用终端操作不好管理==>webpack提供了一个配置文件 名字叫做webpack.config.js(规定)
+    在package.json里面的scripts这个对象=>是一个自定义指令的位置==>我们可以简化命令实现打包
      "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
